@@ -1,0 +1,89 @@
+openapi: 3.0.0
+info:
+  title: E-commerce Product API
+  version: 1.0.0
+  description: RESTful API for managing products in an e-commerce platform.
+servers:
+  - url: http://localhost:3000
+paths:
+  /products:
+    get:
+      summary: Get all products
+      parameters:
+        - in: query
+          name: category
+          schema:
+            type: string
+          description: Filter products by category.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+    post:
+      summary: Create a new product
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewProduct'
+      responses:
+        '201':
+          description: Product created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+  /products/{id}:
+    get:
+      summary: Get product by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        category:
+          type: string
+        price:
+          type: number
+          format: float
+        description:
+          type: string
+    NewProduct:
+      type: object
+      required:
+        - title
+        - category
+        - price
+      properties:
+        title:
+          type: string
+        category:
+          type: string
+        price:
+          type: number
+          format: float
+        description:
+          type: string

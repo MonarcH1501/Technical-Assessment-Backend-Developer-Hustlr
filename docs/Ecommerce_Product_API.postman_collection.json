@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "E-commerce Product API",
+    "_postman_id": "1b8f9f2d-5eae-4a4d-93d4-882cbb88459c",
+    "description": "Postman collection for testing the E-commerce Product API endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Product by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Filter Products by Category",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products?category=Apparel",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ],
+          "query": [
+            {
+              "key": "category",
+              "value": "Apparel"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create New Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n    \\\"title\\\": \\\"Blue Cap\\\",\\n    \\\"category\\\": \\\"Apparel\\\",\\n    \\\"price\\\": 9.99,\\n    \\\"description\\\": \\\"Adjustable baseball cap\\\"\\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ]
+        }
+      }
+    }
+  ]
+}

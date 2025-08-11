@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Men's T-Shirt",
+    "category": "Apparel",
+    "price": 19.99,
+    "description": "Comfortable cotton t-shirt"
+  },
+  {
+    "id": 2,
+    "title": "Running Shoes",
+    "category": "Footwear",
+    "price": 79.99,
+    "description": "Lightweight running shoes"
+  },
+  {
+    "id": 3,
+    "title": "Women's Hoodie",
+    "category": "Apparel",
+    "price": 39.99,
+    "description": "Cozy hoodie"
+  }
+]
