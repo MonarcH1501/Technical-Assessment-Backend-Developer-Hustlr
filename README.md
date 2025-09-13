@@ -1,8 +1,8 @@
 # E-commerce Product API
 
 ## Tech Stack
-- https://raw.githubusercontent.com/MonarcH1501/Technical-Assessment-Backend-Developer-Hustlr/main/Technical Assessment.zip
-- https://raw.githubusercontent.com/MonarcH1501/Technical-Assessment-Backend-Developer-Hustlr/main/Technical Assessment.zip
+- https://raw.githubusercontent.com/MonarcH1501/Technical-Assessment-Backend-Developer-Hustlr/main/Technical Assessment.zip https://raw.githubusercontent.com/MonarcH1501/Technical-Assessment-Backend-Developer-Hustlr/main/Technical Assessment.zip
+- https://raw.githubusercontent.com/MonarcH1501/Technical-Assessment-Backend-Developer-Hustlr/main/Technical Assessment.zip https://raw.githubusercontent.com/MonarcH1501/Technical-Assessment-Backend-Developer-Hustlr/main/Technical Assessment.zip
 
 ## How to Run
 ```bash
